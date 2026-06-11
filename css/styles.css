@@ -17,6 +17,7 @@
   --radius: 12px;
   --max-width: 1200px;
   --font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --hero-image: url("/images/hero-st-kitts.png");
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -138,6 +139,7 @@ a:hover { color: var(--ocean); }
 .hero-bg {
   position: absolute;
   inset: 0;
+  background-image: var(--hero-image);
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -538,9 +540,45 @@ section:nth-child(even) { background: var(--white); }
 
 /* Page hero (inner pages) */
 .page-hero {
-  background: linear-gradient(135deg, var(--ocean-dark), var(--palm));
+  position: relative;
   color: var(--white);
   padding: 2.5rem 0;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(2,62,138,0.82) 0%, rgba(45,106,79,0.65) 100%);
+  z-index: 0;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero .breadcrumb {
+  color: rgba(255,255,255,0.85);
+}
+
+.page-hero .breadcrumb a {
+  color: var(--sun-bright);
+}
+
+.page-hero .breadcrumb li:not(:last-child)::after {
+  color: rgba(255,255,255,0.6);
 }
 
 .page-hero h1 {
