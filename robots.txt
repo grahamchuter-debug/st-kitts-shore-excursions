@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stkittsshoreexcursion.com/sitemap.xml
