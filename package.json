@@ -1,0 +1,11 @@
+{
+  "name": "st-kitts-shore-excursions",
+  "private": true,
+  "scripts": {
+    "sync:schedules": "node scripts/sync-schedules.mjs",
+    "qa:schedules": "node scripts/qa-schedules.mjs",
+    "build:schedules": "python3 scripts/generate_schedule_pages.py",
+    "build:all": "npm run sync:schedules && npm run qa:schedules && npm run build:schedules",
+    "preview": "python3 -m http.server 8911"
+  }
+}

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | St Kitts Shore Excursion Guide</title>
-  <meta name="description" content="Contact the St Kitts shore excursion guide with questions about cruise port tours, itineraries and excursion options. We do not operate tours directly.">
+  <title>Contact Enquiry | St Kitts Shore Excursion Guide</title>
+  <meta name="description" content="Open your email app to send a St Kitts shore excursion enquiry to hello@stkittsshoreexcursion.com. No automatic website submission.">
   <link rel="canonical" href="https://stkittsshoreexcursion.com/contact.html">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stkittsshoreexcursion.com/contact.html">
-  <meta property="og:title" content="Contact St Kitts Shore Excursion Guide">
-  <meta property="og:description" content="Get in touch with questions about St Kitts cruise excursions and port-day planning.">
+  <meta property="og:title" content="Contact Enquiry | St Kitts Shore Excursion Guide">
+  <meta property="og:description" content="Prepare your St Kitts enquiry details, then open email to send them yourself.">
   <meta property="og:image" content="https://stkittsshoreexcursion.com/images/hero-st-kitts.png">
-  <link rel="stylesheet" href="/css/styles.css?v=3">
+  <link rel="stylesheet" href="/css/styles.css?v=5">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
     {"@type":"ListItem","position":1,"name":"Home","item":"https://stkittsshoreexcursion.com/"},
@@ -30,6 +30,7 @@
           <li><a href="/excursions.html">Excursions</a></li>
           <li><a href="/railway-tours.html">Railway Tours</a></li>
           <li><a href="/private-tours.html">Private Tours</a></li>
+          <li><a href="/ship-schedule/">Ship Schedule</a></li>
           <li><a href="/port-guide.html">Port Guide</a></li>
           <li><a href="/one-day-in-st-kitts.html">One Day</a></li>
           <li><a href="/faq.html">FAQ</a></li>
@@ -44,30 +45,38 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Contact</li></ol></nav>
-        <h1>Contact Us</h1>
-        <p>Questions about St Kitts shore excursions or cruise port planning? Send us a message — we are an independent guide and do not operate tours directly.</p>
+        <h1>Contact enquiry</h1>
+        <p>Questions about St Kitts shore excursions or Port Zante planning? Fill in the fields, then open your email app to send the enquiry yourself. We are an independent guide and do not operate tours.</p>
       </div>
     </div>
 
     <div class="container contact-grid">
       <div>
-        <h2>How We Can Help</h2>
-        <p>We help cruise passengers compare St Kitts shore excursion options — railway tours, Brimstone Hill Fortress visits, island highlights, catamaran cruises and private experiences.</p>
-        <p>We cannot confirm tour availability, process bookings, or guarantee return-to-ship timing. For reservations, contact licensed tour operators directly.</p>
+        <h2>How we can help</h2>
+        <p>We help cruise passengers compare St Kitts shore excursion options: railway tours, Brimstone Hill Fortress visits, island highlights, catamaran cruises and private experiences.</p>
+        <p>We cannot confirm tour availability, process bookings, or promise return-to-ship timing. For reservations, contact licensed tour operators directly.</p>
         <div class="disclaimer-box">
-          Always check your cruise ship arrival and departure times before booking any shore excursion.
+          Always check your cruise ship arrival and departure times before booking any shore excursion. See the <a href="/ship-schedule/">ship schedule</a> for planned Port Zante calls.
+        </div>
+        <div class="concierge-note">
+          <strong>Email:</strong> <a href="mailto:hello@stkittsshoreexcursion.com">hello@stkittsshoreexcursion.com</a><br>
+          Messages to this address are forwarded to our operations inbox.
         </div>
       </div>
       <div>
-        <form class="contact-form" id="contact-form" action="#" method="post">
+        <p class="form-honesty">This website does <strong>not</strong> send the enquiry for you. The button opens your email client with a draft to hello@stkittsshoreexcursion.com. You choose whether to send it.</p>
+        <form class="contact-form" id="contact-form" action="#" method="get">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required autocomplete="name">
 
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required autocomplete="email">
 
-          <label for="cruise-line">Cruise Line (optional)</label>
+          <label for="cruise-line">Cruise line (optional)</label>
           <input type="text" id="cruise-line" name="cruise-line" autocomplete="organization">
+
+          <label for="ship-date">Ship / port date (optional)</label>
+          <input type="text" id="ship-date" name="ship-date" autocomplete="off" placeholder="e.g. Ship name and YYYY-MM-DD">
 
           <label for="topic">Topic</label>
           <select id="topic" name="topic" required>
@@ -80,12 +89,12 @@
           </select>
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" required placeholder="Include your ship name and port date if relevant."></textarea>
+          <textarea id="message" name="message" required placeholder="Include your preferences and timing constraints."></textarea>
 
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="submit" class="btn btn-primary">Open email to send enquiry</button>
         </form>
         <p id="form-success" hidden tabindex="-1" role="status" style="margin-top:1rem;padding:1rem;background:var(--sand);border-radius:var(--radius);">
-          Thank you for your message. We will respond as soon as possible. For urgent booking needs, please contact a licensed tour operator directly.
+          Your email draft should now be open. Your enquiry has <strong>not</strong> been sent yet until you press send in your email app. If nothing opened, email <a href="mailto:hello@stkittsshoreexcursion.com">hello@stkittsshoreexcursion.com</a> directly.
         </p>
       </div>
     </div>
@@ -96,13 +105,41 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/" class="logo" style="color:#fff;"><span class="logo-icon" aria-hidden="true">&#9733;</span><span>St Kitts Shore Excursions</span></a>
-          <p>Independent guide for cruise passengers. We do not operate tours directly.</p>
+          <p>Independent guide for cruise passengers comparing St Kitts shore excursions, cruise port tours and private island experiences. We do not operate tours directly.</p>
         </div>
-        <div><h3>Excursions</h3><ul><li><a href="/excursions.html">All Excursions</a></li></ul></div>
-        <div><h3>Planning</h3><ul><li><a href="/faq.html">FAQ</a></li></ul></div>
-        <div><h3>Site</h3><ul></ul></div>
+        <div>
+          <h3>Excursions</h3>
+          <ul>
+            <li><a href="/st-kitts-scenic-railway-tour.html">Scenic Railway</a></li>
+            <li><a href="/brimstone-hill-fortress-tour.html">Brimstone Hill</a></li>
+            <li><a href="/island-highlights-tour.html">Island Highlights</a></li>
+            <li><a href="/catamaran-snorkel-cruise.html">Catamaran Cruise</a></li>
+            <li><a href="/private-st-kitts-tour.html">Private Tours</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Planning</h3>
+          <ul>
+            <li><a href="/ship-schedule/">Ship Schedule</a></li>
+            <li><a href="/port-guide.html">Port Guide</a></li>
+            <li><a href="/one-day-in-st-kitts.html">One Day in St Kitts</a></li>
+            <li><a href="/island-tour-vs-beach.html">Island Tour vs Beach</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/contact.html">Contact enquiry</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Site</h3>
+          <ul>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/methodology.html">Methodology</a></li>
+            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="/terms.html">Terms</a></li>
+            <li><a href="/excursions.html">All Excursions</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-bottom"><p>&copy; 2026 stkittsshoreexcursion.com</p></div>
+      <div class="footer-bottom"><p>&copy; 2026 stkittsshoreexcursion.com. Compare St Kitts shore excursion options. Always verify cruise ship times before booking.</p></div>
     </div>
   </footer>
   <script src="/js/main.js" defer></script>

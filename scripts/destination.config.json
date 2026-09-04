@@ -1,0 +1,23 @@
+{
+  "portSlug": "st-kitts",
+  "destinationName": "St Kitts",
+  "domain": "https://stkittsshoreexcursion.com",
+  "siteName": "St Kitts Shore Excursion",
+  "localOutput": "data/generated/st-kitts-schedules.json",
+  "portGuidePath": "port-guide.html",
+  "bestExcursionsPath": "excursions.html",
+  "oneDayPath": "one-day-in-st-kitts.html",
+  "fontsCss": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+  "expectedTotals": {
+    "total": 59,
+    "byYear": {
+      "2026": 31,
+      "2027": 28,
+      "2028": 0
+    }
+  },
+  "hubIntro": "Find your ship and date for St Kitts, then choose Scenic Railway heritage, Brimstone Hill, beach time or a peninsula loop around Basseterre / Port Zante logistics.",
+  "authoritySource": "../caribbean-shore-excursions/data/imported-schedules/st-kitts.json",
+  "scheduleHubPath": "ship-schedule",
+  "notes": "GENERATED FROM CARIBBEAN AUTHORITY — DO NOT MANUALLY EDIT schedule output files."
+}
