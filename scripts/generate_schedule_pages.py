@@ -34,27 +34,27 @@ HUB_INTRO = CONFIG.get(
 # Editorial + legal URLs preserved/added in sitemap (schedule entries appended).
 EDITORIAL_SITEMAP: list[tuple[str, str, str]] = [
     ("", "1.0", "weekly"),
-    ("excursions.html", "0.9", "weekly"),
-    ("port-guide.html", "0.8", "monthly"),
-    ("one-day-in-st-kitts.html", "0.8", "monthly"),
-    ("private-tours.html", "0.8", "monthly"),
-    ("railway-tours.html", "0.8", "monthly"),
-    ("faq.html", "0.7", "monthly"),
-    ("contact.html", "0.5", "yearly"),
-    ("st-kitts-scenic-railway-tour.html", "0.9", "monthly"),
-    ("brimstone-hill-fortress-tour.html", "0.9", "monthly"),
-    ("island-highlights-tour.html", "0.9", "monthly"),
-    ("south-east-peninsula-tour.html", "0.9", "monthly"),
-    ("catamaran-snorkel-cruise.html", "0.9", "monthly"),
-    ("rainforest-and-monkey-tour.html", "0.8", "monthly"),
-    ("private-st-kitts-tour.html", "0.9", "monthly"),
-    ("beach-and-sightseeing-tour.html", "0.9", "monthly"),
-    ("island-tour-vs-beach.html", "0.8", "monthly"),
-    ("st-kitts-vs-nevis.html", "0.7", "monthly"),
-    ("about.html", "0.5", "yearly"),
-    ("privacy.html", "0.3", "yearly"),
-    ("terms.html", "0.3", "yearly"),
-    ("methodology.html", "0.5", "yearly"),
+    ("excursions/", "0.9", "weekly"),
+    ("port-guide/", "0.8", "monthly"),
+    ("one-day-in-st-kitts/", "0.8", "monthly"),
+    ("private-tours/", "0.8", "monthly"),
+    ("railway-tours/", "0.8", "monthly"),
+    ("faq/", "0.7", "monthly"),
+    ("contact/", "0.5", "yearly"),
+    ("st-kitts-scenic-railway-tour/", "0.9", "monthly"),
+    ("brimstone-hill-fortress-tour/", "0.9", "monthly"),
+    ("island-highlights-tour/", "0.9", "monthly"),
+    ("south-east-peninsula-tour/", "0.9", "monthly"),
+    ("catamaran-snorkel-cruise/", "0.9", "monthly"),
+    ("rainforest-and-monkey-tour/", "0.8", "monthly"),
+    ("private-st-kitts-tour/", "0.9", "monthly"),
+    ("beach-and-sightseeing-tour/", "0.9", "monthly"),
+    ("island-tour-vs-beach/", "0.8", "monthly"),
+    ("st-kitts-vs-nevis/", "0.7", "monthly"),
+    ("about/", "0.5", "yearly"),
+    ("privacy/", "0.3", "yearly"),
+    ("terms/", "0.3", "yearly"),
+    ("methodology/", "0.5", "yearly"),
 ]
 
 
@@ -71,14 +71,14 @@ def esc(s: str) -> str:
 def nav_html(current: str = "") -> str:
     items = [
         ("/", "Home", "home"),
-        ("/excursions.html", "Excursions", "excursions"),
-        ("/railway-tours.html", "Railway Tours", "railway"),
-        ("/private-tours.html", "Private Tours", "private"),
+        ("/excursions/", "Excursions", "excursions"),
+        ("/railway-tours/", "Railway Tours", "railway"),
+        ("/private-tours/", "Private Tours", "private"),
         (f"/{HUB}/", "Ship Schedule", "schedule"),
-        ("/port-guide.html", "Port Guide", "port"),
-        ("/one-day-in-st-kitts.html", "One Day", "oneday"),
-        ("/faq.html", "FAQ", "faq"),
-        ("/contact.html", "Contact", "contact"),
+        ("/port-guide/", "Port Guide", "port"),
+        ("/one-day-in-st-kitts/", "One Day", "oneday"),
+        ("/faq/", "FAQ", "faq"),
+        ("/contact/", "Contact", "contact"),
     ]
     lis = []
     for href, label, key in items:
@@ -114,32 +114,32 @@ def footer_html() -> str:
         <div>
           <h3>Excursions</h3>
           <ul>
-            <li><a href="/st-kitts-scenic-railway-tour.html">Scenic Railway</a></li>
-            <li><a href="/brimstone-hill-fortress-tour.html">Brimstone Hill</a></li>
-            <li><a href="/island-highlights-tour.html">Island Highlights</a></li>
-            <li><a href="/catamaran-snorkel-cruise.html">Catamaran Cruise</a></li>
-            <li><a href="/private-st-kitts-tour.html">Private Tours</a></li>
+            <li><a href="/st-kitts-scenic-railway-tour/">Scenic Railway</a></li>
+            <li><a href="/brimstone-hill-fortress-tour/">Brimstone Hill</a></li>
+            <li><a href="/island-highlights-tour/">Island Highlights</a></li>
+            <li><a href="/catamaran-snorkel-cruise/">Catamaran Cruise</a></li>
+            <li><a href="/private-st-kitts-tour/">Private Tours</a></li>
           </ul>
         </div>
         <div>
           <h3>Planning</h3>
           <ul>
             <li><a href="/ship-schedule/">Ship Schedule</a></li>
-            <li><a href="/port-guide.html">Port Guide</a></li>
-            <li><a href="/one-day-in-st-kitts.html">One Day in St Kitts</a></li>
-            <li><a href="/island-tour-vs-beach.html">Island Tour vs Beach</a></li>
-            <li><a href="/faq.html">FAQ</a></li>
-            <li><a href="/contact.html">Contact enquiry</a></li>
+            <li><a href="/port-guide/">Port Guide</a></li>
+            <li><a href="/one-day-in-st-kitts/">One Day in St Kitts</a></li>
+            <li><a href="/island-tour-vs-beach/">Island Tour vs Beach</a></li>
+            <li><a href="/faq/">FAQ</a></li>
+            <li><a href="/contact/">Contact enquiry</a></li>
           </ul>
         </div>
         <div>
           <h3>Site</h3>
           <ul>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/methodology.html">Methodology</a></li>
-            <li><a href="/privacy.html">Privacy</a></li>
-            <li><a href="/terms.html">Terms</a></li>
-            <li><a href="/excursions.html">All Excursions</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/methodology/">Methodology</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/terms/">Terms</a></li>
+            <li><a href="/excursions/">All Excursions</a></li>
           </ul>
         </div>
       </div>

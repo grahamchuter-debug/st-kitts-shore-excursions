@@ -3,6 +3,9 @@
 .wrangler
 node_modules
 scripts/
+data/
+content/
+partials/
 **/__pycache__
 *.pyc
 .DS_Store

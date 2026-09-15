@@ -1,0 +1,42 @@
+# Phase 39B — St Kitts Pages redirects + source blocks
+# Legacy .html → trailing-slash canonicals (direct 301)
+/about.html /about/ 301
+/beach-and-sightseeing-tour.html /beach-and-sightseeing-tour/ 301
+/brimstone-hill-fortress-tour.html /brimstone-hill-fortress-tour/ 301
+/catamaran-snorkel-cruise.html /catamaran-snorkel-cruise/ 301
+/contact.html /contact/ 301
+/excursions.html /excursions/ 301
+/faq.html /faq/ 301
+/island-highlights-tour.html /island-highlights-tour/ 301
+/island-tour-vs-beach.html /island-tour-vs-beach/ 301
+/methodology.html /methodology/ 301
+/one-day-in-st-kitts.html /one-day-in-st-kitts/ 301
+/port-guide.html /port-guide/ 301
+/privacy.html /privacy/ 301
+/private-st-kitts-tour.html /private-st-kitts-tour/ 301
+/private-tours.html /private-tours/ 301
+/railway-tours.html /railway-tours/ 301
+/rainforest-and-monkey-tour.html /rainforest-and-monkey-tour/ 301
+/south-east-peninsula-tour.html /south-east-peninsula-tour/ 301
+/st-kitts-scenic-railway-tour.html /st-kitts-scenic-railway-tour/ 301
+/st-kitts-vs-nevis.html /st-kitts-vs-nevis/ 301
+/terms.html /terms/ 301
+
+# Block source / deploy internals (defense in depth with middleware)
+/content /404.html 404
+/content/* /404.html 404
+/partials /404.html 404
+/partials/* /404.html 404
+/scripts /404.html 404
+/scripts/* /404.html 404
+/data /404.html 404
+/data/* /404.html 404
+/functions /404.html 404
+/functions/* /404.html 404
+/package.json /404.html 404
+/package-lock.json /404.html 404
+/wrangler.jsonc /404.html 404
+/deploy.sh /404.html 404
+/README.md /404.html 404
+/.assetsignore /404.html 404
+/.gitignore /404.html 404

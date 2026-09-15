@@ -2,16 +2,36 @@
 
 Static site for [stkittsshoreexcursion.com](https://stkittsshoreexcursion.com) — an independent cruise passenger guide to St Kitts shore excursions.
 
-## Deploy to Cloudflare Pages
+## Deploy (Cloudflare Pages)
 
-1. Push this repository to GitHub (or GitLab).
-2. In Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-3. Select the repository and configure:
-   - **Build command:** (leave empty)
-   - **Build output directory:** `/` (project root)
-4. Add custom domain `stkittsshoreexcursion.com` under **Custom domains**.
+Project: `st-kitts-shore-excursions`
 
-No build step required — pure static HTML, CSS and JS.
+Production is Git-connected to `main`. Normal path:
+
+1. Commit changes on `main`
+2. Push to `origin` — Cloudflare Pages builds from the repo root
+3. Confirm deployment in the Pages dashboard
+
+Direct upload (when needed):
+
+```bash
+npx wrangler pages deploy . --project-name=st-kitts-shore-excursions --branch=main
+```
+
+Config that must stay in repo for World 2.0 completion:
+
+- `404.html` — branded 404
+- `_redirects` — legacy `.html` → `/slug/` and source blocks
+- `functions/_middleware.js` — www → apex and source/data/scripts blocks
+- `wrangler.jsonc` — Pages project metadata (`pages_build_output_dir: "."`)
+
+Canonical URL model: apex + trailing-slash directories (`/port-guide/`).
+
+No site build step is required for HTML. Optional schedule tooling:
+
+```bash
+npm run build:all
+```
 
 ## Local preview
 
@@ -23,11 +43,8 @@ Open [http://localhost:8080](http://localhost:8080).
 
 ## Structure
 
-- `index.html` — Homepage with comparison table and featured excursions
-- `excursions.html` — All tours grid
-- `port-guide.html`, `one-day-in-st-kitts.html` — Planning guides
-- `private-tours.html`, `railway-tours.html` — Category pages
-- `faq.html`, `contact.html` — Support pages
-- 8 tour detail pages (`*-tour.html`, `catamaran-snorkel-cruise.html`)
+- `index.html` — Homepage
+- `*/index.html` — Editorial routes (trailing-slash directories)
+- `ship-schedule/` — Cruise call hub + year/month pages
 - `css/styles.css`, `js/main.js` — Shared assets
 - `sitemap.xml`, `robots.txt` — SEO
