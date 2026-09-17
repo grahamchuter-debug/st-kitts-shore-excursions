@@ -9,11 +9,11 @@
   "oneDayPath": "one-day-in-st-kitts/",
   "fontsCss": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
   "expectedTotals": {
-    "total": 59,
+    "total": 126,
     "byYear": {
       "2026": 31,
       "2027": 28,
-      "2028": 0
+      "2028": 67
     }
   },
   "hubIntro": "Find your ship and date for St Kitts, then choose Scenic Railway heritage, Brimstone Hill, beach time or a peninsula loop around Basseterre / Port Zante logistics.",

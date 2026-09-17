@@ -2,16 +2,17 @@
   "_comment": "GENERATED FROM CARIBBEAN AUTHORITY — DO NOT MANUALLY EDIT. Run npm run sync:schedules",
   "port": "st-kitts",
   "portDisplayName": "St Kitts",
-  "syncedAt": "2026-09-04T15:43:41.313Z",
+  "syncedAt": "2026-09-17T19:12:52.885Z",
   "sourceFile": "../caribbean-shore-excursions/data/imported-schedules/st-kitts.json",
   "source": "caribbean-shore-excursions imported schedules",
   "filter": "authority file st-kitts.json (port-specific import)",
-  "callCount": 59,
+  "callCount": 126,
   "integrity": {
-    "total": 59,
+    "total": 126,
     "byYear": {
       "2026": 31,
-      "2027": 28
+      "2027": 28,
+      "2028": 67
     },
     "byMonth": {
       "2026-06": 5,
@@ -29,23 +30,31 @@
       "2027-07": 3,
       "2027-08": 2,
       "2027-09": 3,
-      "2027-10": 6
+      "2027-10": 6,
+      "2028-01": 19,
+      "2028-02": 16,
+      "2028-03": 18,
+      "2028-04": 7,
+      "2028-11": 4,
+      "2028-12": 3
     },
     "firstDate": "2026-06-10",
-    "lastDate": "2027-10-27",
-    "uniqueShips": 23,
-    "cruiseLines": 8,
-    "populatedMonths": 16,
+    "lastDate": "2028-12-24",
+    "uniqueShips": 41,
+    "cruiseLines": 10,
+    "populatedMonths": 22,
     "duplicateFingerprints": 0,
-    "has2028": false
+    "has2028": true
   },
   "cruiseLineList": [
     "Azamara",
     "Carnival Cruise Line",
     "Celebrity Cruises",
+    "Holland America Line",
     "Marella Cruises",
     "Norwegian Cruise Line",
     "Oceania Cruises",
+    "Regent Seven Seas",
     "Royal Caribbean",
     "Verify with cruise line"
   ],
@@ -53,26 +62,44 @@
     "AIDAbella",
     "AIDAdiva",
     "AIDAperla",
+    "Adventure Of The Seas",
     "Allure Of The Seas",
     "Amadea",
     "Artania",
     "Azamara Journey",
     "Brilliant Lady",
     "Carnival Breeze",
+    "Carnival Miracle",
+    "Celebrity Ascent",
     "Celebrity Beyond",
+    "Celebrity Eclipse",
+    "Celebrity Xcel",
     "Crystal Serenity",
+    "Eurodam",
     "Explora III",
     "Grandeur Of The Seas",
     "Harmony Of The Seas",
+    "Hero Of The Seas",
     "Marella Explorer 2",
     "Mein Schiff 1",
     "Mein Schiff 2",
     "Norwegian Jewel",
+    "Oceania Aurelia",
+    "Oceania Marina",
+    "Oceania Sonata",
     "Oceania Vista",
+    "Odyssey Of The Seas",
     "Rhapsody Of The Seas",
+    "Seven Seas Grandeur",
+    "Seven Seas Mariner",
+    "Seven Seas Prestige",
+    "Seven Seas Voyager",
     "Star Of The Seas",
     "Symphony Of The Seas",
-    "Wind Surf"
+    "Vision Of The Seas",
+    "Volendam",
+    "Wind Surf",
+    "Zuiderdam"
   ],
   "populatedMonthList": [
     "2026-06",
@@ -90,7 +117,13 @@
     "2027-07",
     "2027-08",
     "2027-09",
-    "2027-10"
+    "2027-10",
+    "2028-01",
+    "2028-02",
+    "2028-03",
+    "2028-04",
+    "2028-11",
+    "2028-12"
   ],
   "calls": [
     {
@@ -410,15 +443,6 @@
     },
     {
       "date": "2027-03-02",
-      "ship": "Norwegian Jewel",
-      "cruiseLine": "Norwegian Cruise Line",
-      "arrival": "08:00",
-      "departure": "20:00",
-      "timeInPort": "12h",
-      "passengers": "2,388 to 2,866"
-    },
-    {
-      "date": "2027-03-02",
       "ship": "AIDAbella",
       "cruiseLine": "Verify with cruise line",
       "arrival": "08:00",
@@ -434,6 +458,15 @@
       "departure": "17:00",
       "timeInPort": "9h",
       "passengers": "1,814 to 2,177"
+    },
+    {
+      "date": "2027-03-02",
+      "ship": "Norwegian Jewel",
+      "cruiseLine": "Norwegian Cruise Line",
+      "arrival": "08:00",
+      "departure": "20:00",
+      "timeInPort": "12h",
+      "passengers": "2,388 to 2,866"
     },
     {
       "date": "2027-05-03",
@@ -623,6 +656,609 @@
       "departure": "17:00",
       "timeInPort": "9h",
       "passengers": "1,994 to 2,393"
+    },
+    {
+      "date": "2028-01-01",
+      "ship": "Oceania Marina",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "07:00",
+      "departure": "17:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-01",
+      "ship": "Volendam",
+      "cruiseLine": "Holland America Line",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-02",
+      "ship": "Celebrity Eclipse",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-03",
+      "ship": "Hero Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-03",
+      "ship": "Rhapsody Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-04",
+      "ship": "Harmony Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-06",
+      "ship": "Celebrity Xcel",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-08",
+      "ship": "Odyssey Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-11",
+      "ship": "Seven Seas Prestige",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-13",
+      "ship": "Celebrity Eclipse",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-18",
+      "ship": "Eurodam",
+      "cruiseLine": "Holland America Line",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-20",
+      "ship": "Celebrity Xcel",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-20",
+      "ship": "Odyssey Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "10:00",
+      "departure": "17:00",
+      "timeInPort": "7h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-21",
+      "ship": "Celebrity Ascent",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-22",
+      "ship": "Seven Seas Grandeur",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-28",
+      "ship": "Odyssey Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-29",
+      "ship": "Adventure Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-30",
+      "ship": "Zuiderdam",
+      "cruiseLine": "Holland America Line",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-01-31",
+      "ship": "Seven Seas Prestige",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-01",
+      "ship": "Celebrity Ascent",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-01",
+      "ship": "Seven Seas Grandeur",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-04",
+      "ship": "Rhapsody Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-06",
+      "ship": "Carnival Breeze",
+      "cruiseLine": "Carnival Cruise Line",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-07",
+      "ship": "Oceania Sonata",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "08:00",
+      "departure": "18:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-11",
+      "ship": "Oceania Marina",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "09:00",
+      "departure": "19:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-11",
+      "ship": "Seven Seas Grandeur",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-12",
+      "ship": "Adventure Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-15",
+      "ship": "Celebrity Eclipse",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-16",
+      "ship": "Rhapsody Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-17",
+      "ship": "Celebrity Xcel",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-19",
+      "ship": "Eurodam",
+      "cruiseLine": "Holland America Line",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-21",
+      "ship": "Seven Seas Grandeur",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-22",
+      "ship": "Oceania Marina",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "07:00",
+      "departure": "17:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-24",
+      "ship": "Oceania Sonata",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "08:00",
+      "departure": "18:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-02-25",
+      "ship": "Celebrity Eclipse",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-02",
+      "ship": "Celebrity Xcel",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-03",
+      "ship": "Celebrity Ascent",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-03",
+      "ship": "Rhapsody Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-06",
+      "ship": "Oceania Sonata",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "08:00",
+      "departure": "18:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-07",
+      "ship": "Celebrity Eclipse",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-14",
+      "ship": "Celebrity Ascent",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-14",
+      "ship": "Vision Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-15",
+      "ship": "Rhapsody Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-15",
+      "ship": "Seven Seas Voyager",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "07:30",
+      "departure": "14:00",
+      "timeInPort": "6h 30m",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-17",
+      "ship": "Celebrity Eclipse",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-21",
+      "ship": "Vision Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-22",
+      "ship": "Eurodam",
+      "cruiseLine": "Holland America Line",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-24",
+      "ship": "Celebrity Ascent",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-28",
+      "ship": "Celebrity Eclipse",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-28",
+      "ship": "Seven Seas Grandeur",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-29",
+      "ship": "Rhapsody Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-30",
+      "ship": "Celebrity Xcel",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-03-30",
+      "ship": "Symphony Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-04-03",
+      "ship": "Carnival Miracle",
+      "cruiseLine": "Carnival Cruise Line",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-04-07",
+      "ship": "Celebrity Eclipse",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-04-11",
+      "ship": "Vision Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-04-12",
+      "ship": "Rhapsody Of The Seas",
+      "cruiseLine": "Royal Caribbean",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-04-13",
+      "ship": "Celebrity Xcel",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-04-14",
+      "ship": "Celebrity Ascent",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "07:00",
+      "departure": "16:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-04-18",
+      "ship": "Celebrity Eclipse",
+      "cruiseLine": "Celebrity Cruises",
+      "arrival": "08:00",
+      "departure": "17:00",
+      "timeInPort": "9h",
+      "passengers": null
+    },
+    {
+      "date": "2028-11-02",
+      "ship": "Seven Seas Mariner",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "07:00",
+      "departure": "17:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-11-03",
+      "ship": "Oceania Aurelia",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "07:00",
+      "departure": "19:00",
+      "timeInPort": "12h",
+      "passengers": null
+    },
+    {
+      "date": "2028-11-21",
+      "ship": "Oceania Vista",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "07:00",
+      "departure": "17:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-11-24",
+      "ship": "Seven Seas Mariner",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "07:00",
+      "departure": "17:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-12-03",
+      "ship": "Seven Seas Mariner",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "07:00",
+      "departure": "17:00",
+      "timeInPort": "10h",
+      "passengers": null
+    },
+    {
+      "date": "2028-12-06",
+      "ship": "Seven Seas Prestige",
+      "cruiseLine": "Regent Seven Seas",
+      "arrival": "07:00",
+      "departure": "15:00",
+      "timeInPort": "8h",
+      "passengers": null
+    },
+    {
+      "date": "2028-12-24",
+      "ship": "Oceania Vista",
+      "cruiseLine": "Oceania Cruises",
+      "arrival": "07:00",
+      "departure": "17:00",
+      "timeInPort": "10h",
+      "passengers": null
     }
   ]
 }
